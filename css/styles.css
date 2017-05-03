@@ -1,0 +1,72 @@
+body, html {
+    height: 100%;
+}
+
+.navbar {
+  height: 80px;
+  width: 100%;
+  position: fixed;
+  background-color: transparent;
+  display: flex;
+  justify-content: space-between;
+}
+
+.row {
+
+}
+
+.nav-text {
+  color: #4CF4A0;
+}
+
+.break1 {
+  height: 100px;
+  width: 100%;
+  background-color: #fff;
+}
+
+.parallax {
+  height: 100%;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.home {
+  background-image: url("../img/fog.jpg");
+}
+
+.home-center {
+  height: 400px;
+  width: 40%;
+  color: #fff;
+  z-index: 10;
+}
+
+.name-title {
+  font-family: sans-serif;
+  text-align: center;
+}
+
+.line1 {
+  border-bottom: 2px solid white;
+  width: 100%;
+}
+
+.title-sub {
+  font-family: sans-serif;
+  text-align: center;
+}
+
+.about {
+  background-image: url("../img/cliff.jpg");
+}
+
+.developer {
+  background-image: url("../img/snow.jpg");
+}
+
+.artist {
+  background-image: url("../img/stream.jpg");
+}
