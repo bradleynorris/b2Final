@@ -12,22 +12,40 @@
 
 <!-- Nav -->
 
-<div class="container-fluid navbar">
-    <div class="row">
-      <div class="col-md-12 nav-row">
-        <div class="col-md-4 icon1 nav-text">HAM</div>
-        <div class="col-md-4 icon2 nav-text">LOGO</div>
-        <div class="col-md-4 icon3 nav-text">ENVELOPE</div>
-      </div>
-    </div>
-  </div>
+<nav class="navbar navbar-default navbar-fixed-top text-shadow">
+	<div class="container-fluid">
+		<!-- Brand and toggle get grouped for better mobile display -->
+		<div class="navbar-header">
+			<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-collapse" aria-expanded="false">
+				<span class="sr-only">Toggle navigation</span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+			</button>
+			<a class="navbar-brand" href="#">
+				<img src="img/logo.png" alt="BCN Logo">
+			</a>
+		</div>
+
+		<!-- Collect the nav links, forms, and other content for toggling -->
+		<div class="collapse navbar-collapse" id="navbar-collapse">
+			<ul class="nav navbar-nav navbar-right">
+				<li class="active"><a href="#home">home</a></li>
+				<li ><a href="#about">about</a></li>
+				<li ><a href="#developer">developer</a></li>
+				<li ><a href="#artist">artist</a></li>
+				<li ><a href="#contact">contact</a></li>
+			</ul>
+		</div><!-- /.navbar-collapse -->
+	</div><!-- /.container-fluid -->
+</nav>
 
 <!-- End Nav -->
 <!-- Main Page -->
 
 <div class="parallax home" id="#home">
-	<div class="row home-center">
-    <div class="col-md-12">
+	<div class="row">
+    <div class="col-md-12 home-center">
       <h1 class="name-title">Bradley C. Norris</h1>
       <div class="line1"></div>
       <p class="title-sub">developer.artist.human</p>
@@ -42,7 +60,18 @@
 <!-- About Page -->
 
 <div class="parallax about" id="#about">
-
+	<div class="container about-section">
+		<h1 class="page-title">about</h1>
+		<div class="row">
+			<div class="col-sm-10 col-sm-offset-1 about-box">
+				<div class="col-sm-4">
+					<img src="img/mittens.jpg" alt="myface" class="about-pic">
+				</div>
+				<p class="col-sm-8 about-text">I am Bradley C. Norris and I am 	a student attempting to learn all I can about website 	development.  I have a passon for designing good looking 	websites that stems from my backround of always being involved 	in artistic persuits.  Below you'll find just a few of my 	drawings and doodles. These are just a few that I have pulled 	from the multitude of notebooks I have filled with drawings, 	sketches and doodles.  Any spare time I have is usually spent 	drawing in these notebooks. I'm looking to take my artistic eye 	and apply it to web development; creating websites that are as 	beautiful as they are functional.  I hope to add some more 	professional websites to the list below in the near future. I have way too many hobbies but I try to manage them all well.  I love to hike, backpack and get outdoors as much as possible.  I love all things soccer.  I play street and indoor soccer and you can typically find me up drinking coffee at 4 a.m. on the weekends to catch a Premier League match.  I love to fish and am an avid cyclist.  Lets just say, I stay busy.  Finding time in my schedule to code has been a challenge, but a welcomed addition to my slate of interests.  If you have any questions or would like to just reach out and chat, feel free to use the contact form below.
+				</p>
+			</div>
+		</div>
+	</div>
 </div>
   <div class="container-fluid break1">
 
@@ -52,7 +81,40 @@
 <!-- Developer Page -->
 
 <div class="parallax developer" id="#developer">
-
+	<div class="container developer-section">
+		<h1 class="page-title">developer</h1>
+		<div class="row">
+	  	<div class="col-sm-6 col-md-4">
+	    	<div class="thumbnail">
+					<a href="https://first-website-bradleynorris.c9users.io/index.html" target="_blank">
+	      		<img src="img/flo.png" alt="Fire Lookouts">
+					</a>
+	    	  <div class="caption">
+	    	    <h3 class="dev-desk">Fire Lookouts</h3>
+	    	    <p class="dev-desk">My first website.  Dedicated to fire lookouts and my persuit of mountain-top adventure.</p>
+	    	  </div>
+	    	</div>
+	  	</div>
+			<div class="col-sm-6 col-md-4">
+	    	<div class="thumbnail">
+	      	<img src="img/restaurante.png" alt="Restaurante">
+	    	  <div class="caption">
+	    	    <h3 class="dev-desk">Restaurante</h3>
+	    	    <p class="dev-desk">Site developed in class as practice for Mobile Friendly Websites. A fake restaurante in Fresno, CA.</p>
+	    	  </div>
+	    	</div>
+	  	</div>
+			<div class="col-sm-6 col-md-4">
+	    	<div class="thumbnail">
+	      	<img src="img/petstore.png" alt="Pet Store">
+	    	  <div class="caption">
+	    	    <h3 class="dev-desk">Pet Store</h3>
+	    	    <p class="dev-desk">Pet Store site developed in class as well.  Obviously I'll have more to put her later.</p>
+	    	  </div>
+	    	</div>
+	  	</div>
+		</div>
+	</div>
 </div>
   <div class="container-fluid break1">
 
@@ -62,18 +124,108 @@
 <!-- Artist Page -->
 
 <div class="parallax artist" id="#artist">
-
+	<div class="container">
+		<div class="row text-center">
+			<div class="col-sm-12">
+				<h1 class="page-title">artist</h1>
+			</div>
+		</div>
+		<div class="row">
+			<ul class="nav nav-tabs nav-justified text-uppercase">
+  			<li role="presentation" class="active"><a href="#drawings" data-toggle="tab">Drawings</a></li>
+  			<li role="presentation"><a href="#digital" data-toggle="tab">Digital</a></li>
+  			<li role="presentation"><a href="#doodles" data-toggle="tab">Doodles</a></li>
+			</ul>
+			<div class="tab-content">
+				<div id="drawings" class="tab-pane fade active in">
+					<div class="col-xs-12 col-sm-4 art-pic draw1">
+						<img src="img/bird.jpg" alt="bird" class="img-responsive img-thumbnail">
+						<h3 class="art-desk">Colorful Bird</h3>
+					</div>
+					<div class="col-xs-12 col-sm-4 art-pic draw2">
+						<img src="img/huntsman.jpg" alt="Huntsman" class="img-responsive img-thumbnail">
+						<h3 class="art-desk">Nature Hike</h3>
+					</div>
+					<div class="col-xs-12 col-sm-4 art-pic draw3">
+						<img src="img/camel.jpg" alt="Camel" class="img-responsive img-thumbnail">
+						<h3 class="art-desk">Camel Walk</h3>
+					</div>
+				</div>
+				<div id="digital" class="tab-pane fade">
+					<div class="col-xs-12 col-sm-4 art-pic draw1">
+						<img src="img/llama.png" alt="Llama" class="img-responsive img-thumbnail">
+						<h3 class="art-desk">Llama</h3>
+					</div>
+					<div class="col-xs-12 col-sm-4 art-pic draw2">
+						<img src="img/face.png" alt="Face" class="img-responsive img-thumbnail">
+						<h3 class="art-desk">Self Portrait</h3>
+					</div>
+					<div class="col-xs-12 col-sm-4 art-pic draw3">
+						<img src="img/prospector.png" alt="Prospector" class="img-responsive img-thumbnail">
+						<h3 class="art-desk">Beer Label</h3>
+					</div>
+				</div>
+				<div id="doodles" class="tab-pane fade">
+					<div class="col-xs-12 col-sm-4 art-pic draw1">
+						<img src="img/bull.jpg" alt="Bull" class="img-responsive img-thumbnail">
+						<h3 class="art-desk">Bull</h3>
+					</div>
+					<div class="col-xs-12 col-sm-4 art-pic draw2">
+						<img src="img/monster.jpg" alt="Monster" class="img-responsive img-thumbnail">
+						<h3 class="art-desk">Monster</h3>
+					</div>
+					<div class="col-xs-12 col-sm-4 art-pic draw3">
+						<img src="img/murderface.jpg" alt="Face Mask" class="img-responsive img-thumbnail">
+						<h3 class="art-desk">Face Mask</h3>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
 </div>
   <div class="container-fluid break1">
 
   </div>
 
 <!-- End Artist Page -->
-<!-- Contact Page -->
+<!-- Contact Page
 
+ <div id="contact">
+	<div class="container footer-cont">
+		<div class="row">
+			<div class="col-sm-11 col-sm-offset-1 footer-text-row">
+				<h1>CONTACT ME</h1>
+				<p>Got any questions? Want to tell me how handsome I am? Don't like what you're seeing? Any and all messages welcome.  I'd love to hear from you.</p>
+			</div>
+		</div>
+		<div class="row footer-content-row">
+			<div class="col-sm-5">
 
+				<a id="foxyform_embed_link_870769" href="http://www.foxyform.com/">foxyform</a>
+				<script type="text/javascript">
+				(function(d, t){
+				   var g = d.createElement(t),
+				       s = d.getElementsByTagName(t)[0];
+				   g.src = "http://www.foxyform.com/js.php?id=870769&sec_hash=c9c9dd6a89d&width=350px";
+				   s.parentNode.insertBefore(g, s);
+				}(document, "script"));
+				</script>
 
-<!-- End Contact Page -->
+			</div>
+			<div class="col-sm-6 col-sm-offset-1">
+				<h5>Bradley C Norris</h5>
+				<p>risebaxelrod@gmail.com</p>
+				<p>Fresno, CA</p>
+				<p>(209) 200-3233</p>
+				<div class="g-map">
+					<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d8634.158891180947!2d-119.7937958042675!3d36.76353469781164!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xed62d6b505095347!2sTaco+Bell!5e0!3m2!1sen!2sus!4v1493880625071" width="500" height="200" frameborder="0" style="border:0" allowfullscreen></iframe>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+ End Contact Page -->
 
   <!-- javascript	 -->
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>

@@ -1,23 +1,55 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300');
+@import url('https://fonts.googleapis.com/css?family=Permanent+Marker');
+
 body, html {
     height: 100%;
 }
 
-.navbar {
-  height: 80px;
-  width: 100%;
-  position: fixed;
+.page-title {
+  color: #fff;
+  text-shadow: 5px solid black;
+  font-family: 'Permanent Marker', sans-serif;
+}
+/*Nav Section*/
+
+.navbar-default {
   background-color: transparent;
-  display: flex;
-  justify-content: space-between;
+  border-color: transparent;
 }
 
-.row {
-
+.navbar-default .navbar-nav>.active>a,
+.navbar-default .navbar-nav>.active>a:focus,
+.navbar-default .navbar-nav>.active>a:hover {
+  color: #fff;
+  background-color: rgba(17, 17, 17, .5);
 }
 
-.nav-text {
-  color: #4CF4A0;
+.navbar-default .navbar-nav>li>a:focus,
+.navbar-default .navbar-nav>li>a:hover {
+  color: #42f4a4;
+  background-color: rgba(17, 17, 17, .2);
 }
+
+.navbar-default .navbar-nav>li>a {
+  color: #fcfcfc;
+}
+
+nav.navbar {
+  position: absolute;
+  top: 100;
+  right: 0;
+  left: 0;
+  z-index: 20;
+}
+
+.navbar-brand>img {
+  margin-top: -40px;
+  height: 200px;
+  width: 200px;
+}
+
+/*End Nav Section*/
+/*First Page*/
 
 .break1 {
   height: 100px;
@@ -38,35 +70,89 @@ body, html {
 }
 
 .home-center {
-  height: 400px;
-  width: 40%;
+  height: 100%;
+  width: 100%;
   color: #fff;
   z-index: 10;
+  display: flex;
+  flex-direction: column;
+  margin-top: 40%;
 }
 
 .name-title {
-  font-family: sans-serif;
+  font-family: 'Permanent Marker', sans-serif;
   text-align: center;
-}
-
-.line1 {
-  border-bottom: 2px solid white;
-  width: 100%;
 }
 
 .title-sub {
-  font-family: sans-serif;
+  font-family: 'Open Sans Condensed', sans-serif;
   text-align: center;
 }
+
+/*End First Page*/
+/*About Page*/
 
 .about {
   background-image: url("../img/cliff.jpg");
 }
 
+.about-section {
+  color: #000;
+  font-family: 'Open Sans Condensed', sans-serif;
+  font-size: 20px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.about-box {
+  background-color: rgba(255, 255, 255, .7);
+  z-index: 1;
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: row;
+  padding: 20px;
+
+}
+
+.about-pic {
+  height: 300px;
+  width: 300px;
+  border: 5px solid white;
+}
+
+/*End About Page*/
+/*Developer Page*/
 .developer {
   background-image: url("../img/snow.jpg");
 }
 
+.developer-section {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.dev-desk {
+    font-family: 'Open Sans Condensed', sans-serif;
+}
+
+/*End Developer Page*/
+/*Artist Page*/
 .artist {
   background-image: url("../img/stream.jpg");
 }
+
+.nav-tabs {
+  background-color: #fff;
+  color: #000;
+  font-family: 'Open Sans Condensed', sans-serif;
+  text-decoration: none;
+}
+
+.art-desk {
+  color: #fff;
+    font-family: 'Open Sans Condensed', sans-serif;
+}
+
+/*End Artist Page*/
